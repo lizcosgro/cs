@@ -1,0 +1,21 @@
+tinyArray -
+insert 75.2 μs
+append 73.8 μs
+
+smallArray - 
+insert 41.6 μs
+append 79.4 μs
+
+mediumArray - 
+insert 150.7 μs
+append 104.7 μs
+
+largeArray - 
+insert 7.3457 ms
+append 402.3 μs
+
+extraLargeArray - 
+insert 656.8343 ms
+append 2.7315 ms
+
+The extraLargeArray seems to be the worst scaling array out of all of them, with a massive time difference between that and the largeArray alone. The best scaling of all of the functions is the mediumArray and the smallArray, with the most efficient insert and append times of all the results. 
