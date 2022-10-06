@@ -1,13 +1,14 @@
 // Starting array
-let array = [1, 2, -2]
-
-for (let i = 0; i<array.length; i++){
-    for (n=0; n<3; n++)
-    if ((array[i] + array[n]) === 0) {
-        console.log(`true`)
-    } else { 
-        console.log(`false`)
+function sumZero(arr) {
+    for (let i = 0; i < arr.length; i++) {
+        for(let j=0; j < arr.length; j++ ) {
+            if (arr[i] + arr[j] === 0) {
+                return true;
+            }
+        }
     }
+    return false;
 }
-  
+
+console.log(sumZero([1, 2, 3, 5, -2]));
   
